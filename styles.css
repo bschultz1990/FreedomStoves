@@ -1,0 +1,24 @@
+body {
+    font-family: "Montserrat", "sans serif";
+}
+
+#hero-banner {
+    background-image: linear-gradient(#8851e047, #8851e047), url(media/Independence-Diagram.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 3rem;
+}
+
+#hero-banner-title {
+    font-size: 4rem;
+}
+
+.hero-text {
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.603) 0.2rem 0.2rem 0.4rem;
+    font-weight: bold;
+}
+
+/* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../../media/examples/lizard.png"); */
