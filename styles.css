@@ -1,16 +1,17 @@
 :root {
     /* var(--darkpurple */
-    --lightpurple: #3f168147;
+    --lightpurple: #2d105a47;
     --navyblue: #18023d;
     --deepblue: #231c4d;
     --dustyblue: #41505e;
+    --lightblue: #2a5279;
     --burgundy: #9c0c0c;
     --brightred: #d94948;
     --lightgrey: #b8b6c4;
 }
 
 body {
-    font-family: "Montserrat", "sans serif";
+    font-family: "Tiro Telugu", serif;
 }
 
 h1 {
@@ -36,8 +37,18 @@ h4 {
     color: var(--navyblue);
 }
 
+h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--navyblue);
+}
+
 p {
     font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 section {
@@ -45,8 +56,18 @@ section {
     padding-bottom: 2rem;
 }
 
+#test {
+    display: none;
+}
+
+#hero-container {
+    margin: 0 0;
+    padding: 0 0;
+}
+
 #hero-banner {
-    background-image: linear-gradient(var(--lightpurple), var(--lightpurple)), url(media/Independence-Diagram.png);
+    background-image: linear-gradient(var(--lightpurple), var(--lightpurple)),
+        url(http://freedomstoves.com/wp-content/uploads/2021/09/Independence-Diagram.png);
     background-position: center center;
     background-repeat: no-repeat;
     display: flex;
@@ -60,7 +81,7 @@ section {
 
 .hero-text {
     color: white;
-    text-shadow: rgba(0, 0, 0, 0.603) 0.2rem 0.2rem 0.4rem;
+    text-shadow: rgba(0, 0, 0, 0.8) 0.2rem 0.2rem 0.4rem;
 }
 
 .bold {
@@ -72,7 +93,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: #fcb3b3; */
 }
 
 /* .flex-item {
@@ -80,7 +100,6 @@ section {
 } */
 
 .link-button-secondary {
-    text-decoration: none;
     text-transform: uppercase;
     font-family: "Arial", sans-serif;
     padding: 0.75rem 2rem;
@@ -92,4 +111,84 @@ section {
 
 .link-button-secondary:hover {
     color: white;
+    background-color: var(--lightblue);
+}
+
+#product-header {
+    margin-bottom: 1.5rem;
+}
+
+.product-card {
+    /* border: 1px solid var(--dustyblue); */
+    min-width: 300px;
+    height: 666px;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 2px black;
+    transition: transform 250ms, box-shadow 250ms;
+    margin: 0.25rem;
+}
+
+.product-card:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: 3px 3px 8px black;
+    border: none;
+}
+
+.product-card-image img {
+    width: 300px;
+}
+
+.product-card p {
+    font-style: italic;
+}
+
+.product-card-link {
+    color: var(--navyblue);
+}
+
+.product-card-link:visited {
+    color: var(--navyblue);
+}
+
+.product-card-link:hover {
+    color: var(--navyblue);
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    h4,
+    h5 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    /* h4 {
+        font-size: 1rem;
+    } */
+}
+
+@media (max-width: 235px) {
+    .link-button-secondary,
+    .link-button-pimary {
+        font-size: 0.75rem;
+    }
 }
