@@ -1,24 +1,90 @@
+:root {
+    /* var(--darkpurple */
+    --lightpurple: #3f168147;
+    --navyblue: #18023d;
+    --deepblue: #231c4d;
+    --dustyblue: #41505e;
+    --burgundy: #9c0c0c;
+    --brightred: #d94948;
+    --lightgrey: #b8b6c4;
+}
+
 body {
     font-family: "Montserrat", "sans serif";
 }
 
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--burgundy);
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--navyblue);
+}
+
+p {
+    font-size: 1.5rem;
+}
+
 #hero-banner {
-    background-image: linear-gradient(#8851e047, #8851e047), url(media/Independence-Diagram.png);
+    background-image: linear-gradient(var(--lightpurple), var(--lightpurple)), url(media/Independence-Diagram.png);
     background-position: center center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    padding: 3rem 3rem;
+    padding: 8rem 2rem;
 }
 
-#hero-banner-title {
-    font-size: 4rem;
+#hero-banner-subtitle {
+    font-style: italic;
 }
 
 .hero-text {
     color: white;
     text-shadow: rgba(0, 0, 0, 0.603) 0.2rem 0.2rem 0.4rem;
+}
+
+.bold {
     font-weight: bold;
 }
 
-/* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../../media/examples/lizard.png"); */
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #fcb3b3; */
+}
+
+/* .flex-item {
+    border: 2px solid black;
+} */
+
+.link-button-secondary {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Arial", sans-serif;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: var(--deepblue);
+    font-weight: bolder;
+}
+
+.link-button-secondary:hover {
+    color: white;
+}
