@@ -40,6 +40,11 @@ p {
     font-size: 1.5rem;
 }
 
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 #hero-banner {
     background-image: linear-gradient(var(--lightpurple), var(--lightpurple)), url(media/Independence-Diagram.png);
     background-position: center center;
