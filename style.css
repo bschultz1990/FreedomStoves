@@ -229,7 +229,7 @@ section {
 
 /* link, visited, hover, active */
 .hamburger.is-active span:nth-child(1) {
-    transform: translateY(-0.0625rem) rotate(-45deg);
+    transform: translateY(-0.06rem) rotate(-45deg);
     transform-origin: top right;
 }
 
@@ -243,7 +243,7 @@ section {
 }
 
 .hamburger.is-active span:nth-child(3) {
-    transform: translateY(0.0625rem) rotate(45deg);
+    transform: translateY(0.06rem) rotate(45deg);
     transform-origin: bottom right;
 }
 
