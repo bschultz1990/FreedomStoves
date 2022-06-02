@@ -1,6 +1,7 @@
 :root {
     /* var(--darkpurple */
     --lightpurple: #2d105a47;
+    --lighterpurple: #aea7bb;
     --navyblue: #18023d;
     --deepblue: #231c4d;
     --dustyblue: #41505e;
@@ -160,6 +161,46 @@ section {
 
 .product-card-link:hover {
     color: var(--navyblue);
+}
+
+.navbar {
+    background: var(--navyblue);
+    font-family: "Arial", sans-serif;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0rem;
+    width: 100%;
+    /* background: orange; */
+}
+
+#nav-logo {
+    margin-right: auto;
+}
+.nav-item {
+    list-style: none;
+    margin-right: 1rem;
+}
+/* link visited, hover, active*/
+.nav-item a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--lighterpurple);
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+}
+
+.nav-item a:visited {
+    color: var(--lighterpurple);
+}
+
+.nav-item a:hover {
+    background: var(--brightred);
+    color: white;
 }
 
 @media (max-width: 480px) {
