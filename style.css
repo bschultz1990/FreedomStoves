@@ -66,8 +66,7 @@ section {
 }
 
 #hero-banner {
-    background-image: linear-gradient(var(--lightpurple), var(--lightpurple)),
-        url(http://freedomstoves.com/wp-content/uploads/2021/09/Independence-Diagram.png);
+    background-image: linear-gradient(var(--lightpurple), var(--lightpurple)), url(http://freedomstoves.com/wp-content/uploads/2021/09/Independence-Diagram.png);
     background-position: center center;
     background-repeat: no-repeat;
     display: flex;
