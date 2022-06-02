@@ -95,9 +95,16 @@ section {
     justify-content: center;
 }
 
-/* .flex-item {
-    border: 2px solid black;
-} */
+.flex-head {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    /* border: 2px solid black; */
+    padding-right: 1rem;
+}
 
 .link-button-secondary {
     text-transform: uppercase;
@@ -114,15 +121,16 @@ section {
     background-color: var(--lightblue);
 }
 
-#product-header {
+.product-header {
     margin-bottom: 1.5rem;
 }
 
 .product-card {
     /* border: 1px solid var(--dustyblue); */
-    min-width: 300px;
+    width: 400px;
     height: 666px;
     padding: 1rem 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.562);
     border-radius: 0.5rem;
     box-shadow: 0px 0px 2px black;
     transition: transform 250ms, box-shadow 250ms;
