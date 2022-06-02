@@ -166,6 +166,8 @@ section {
 .navbar {
     background: var(--navyblue);
     font-family: "Arial", sans-serif;
+    /* background: greenyellow; */
+    padding: 1rem 2rem;
 }
 
 .nav-list {
@@ -183,11 +185,13 @@ section {
 .nav-item {
     list-style: none;
     margin-right: 1rem;
+    /* background: pink; */
 }
 /* link visited, hover, active*/
 .nav-item a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
     font-weight: bold;
     color: var(--lighterpurple);
     padding: 1rem 1rem;
@@ -201,6 +205,46 @@ section {
 .nav-item a:hover {
     background: var(--brightred);
     color: white;
+}
+
+.hamburger {
+    z-index: 1;
+    height: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+    position: relative;
+    /* background: red; */
+}
+
+.hamburger span {
+    background: var(--lighterpurple);
+    display: block;
+    width: 2rem;
+    height: 0.25rem;
+    transition: 0.3s;
+}
+
+/* link, visited, hover, active */
+.hamburger.is-active span:nth-child(1) {
+    transform: translateY(-0.0625rem) rotate(-45deg);
+    transform-origin: top right;
+}
+
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(1rem);
+    background-color: white;
+}
+
+.hamburger.is-active span:nth-child(2) {
+    visibility: hidden;
+}
+
+.hamburger.is-active span:nth-child(3) {
+    transform: translateY(0.0625rem) rotate(45deg);
+    transform-origin: bottom right;
 }
 
 @media (max-width: 480px) {
