@@ -163,6 +163,10 @@ section {
     color: var(--navyblue);
 }
 
+.container {
+    /* background-color: orange; */
+}
+
 .navbar {
     background: var(--navyblue);
     font-family: "Arial", sans-serif;
@@ -176,21 +180,37 @@ section {
     align-items: center;
     margin-bottom: 0rem;
     width: 100%;
+    z-index: 99;
     /* background: orange; */
 }
 
 #nav-logo {
+    list-style: none;
     margin-right: auto;
 }
-.nav-item {
+
+#nav-image {
+    max-height: 7rem;
+}
+
+.small-image {
+    max-height: 7rem;
+}
+
+.nav-item,
+.mobile-nav-item {
     list-style: none;
-    padding: 1rem;
-    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    /* border-radius: 2rem; */
+    max-height: 3rem;
+    /* border: 0.25rem solid rgba(0, 0, 0, 0); */
     /* background: pink; */
 }
 
 /* link visited, hover, active*/
-.nav-item a {
+.nav-item a,
+.mobile-nav-item a {
+    display: inline;
     text-decoration: none;
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -198,16 +218,23 @@ section {
     color: var(--lighterpurple);
 }
 
-.nav-item a:visited {
+.nav-item a:visited,
+.mobile-nav-item a:visited {
     color: var(--lighterpurple);
 }
 
-.nav-item:hover {
-    background: var(--brightred);
+.nav-item:hover,
+.mobile-nav-item:hover {
+    /* border-top: 0.25rem solid var(--brightred); */
 }
 
-.nav-item:hover a {
+.nav-item:hover a,
+.mobile-nav-item:hover a {
     color: white;
+}
+
+.nav-item a .flex-head div {
+    padding-right: 0.5rem;
 }
 
 .hamburger {
@@ -227,7 +254,7 @@ section {
     display: block;
     width: 2rem;
     height: 0.25rem;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 .is-active:hover span:nth-child(1),
@@ -242,7 +269,7 @@ section {
 }
 
 .hamburger:hover span:nth-child(2) {
-    transform: translateX(1rem);
+    transform: translateX(0.5rem);
     background-color: white;
 }
 
@@ -254,6 +281,47 @@ section {
 .hamburger.is-active span:nth-child(3) {
     transform-origin: center;
     transform: translateY(-0.625rem) rotate(45deg);
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 98;
+    padding-top: 10rem;
+    background: var(--navyblue);
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.mobile-nav.mobile-active {
+    left: 0;
+}
+
+.mobile-nav-item {
+    padding: 2rem;
+    text-align: center;
+    width: 100vw;
+}
+
+.mobile-nav-item a {
+    font-size: 1.5rem;
+    font-family: "Arial", sans-serif;
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-item {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
