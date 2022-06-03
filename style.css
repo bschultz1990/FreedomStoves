@@ -3,6 +3,7 @@
     --lightpurple: #2d105a47;
     --lighterpurple: #aea7bb;
     --navyblue: #18023d;
+    --navybluetransparent: #18023dbb;
     --deepblue: #231c4d;
     --dustyblue: #41505e;
     --lightblue: #2a5279;
@@ -44,6 +45,18 @@ h5 {
     color: var(--navyblue);
 }
 
+h6 {
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: "Arial", sans-serif;
+}
+
+h7 {
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: "Tiro Telugu", serif;
+}
+
 p {
     font-size: 1.5rem;
 }
@@ -55,6 +68,10 @@ a {
 section {
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+hr {
+    color: white;
 }
 
 #test {
@@ -70,6 +87,7 @@ section {
     background-image: linear-gradient(var(--lightpurple), var(--lightpurple)), url(http://freedomstoves.com/wp-content/uploads/2021/09/Independence-Diagram.png);
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     padding: 8rem 2rem;
@@ -219,17 +237,14 @@ section {
 }
 
 .nav-item a:visited,
-.mobile-nav-item a:visited {
+.mobile-nav-item a:visited,
+.footer-list-item a:visited {
     color: var(--lighterpurple);
 }
 
-.nav-item:hover,
-.mobile-nav-item:hover {
-    /* border-top: 0.25rem solid var(--brightred); */
-}
-
 .nav-item:hover a,
-.mobile-nav-item:hover a {
+.mobile-nav-item:hover a,
+.footer-list-item a:hover {
     color: white;
 }
 
@@ -283,6 +298,11 @@ section {
     transform: translateY(-0.625rem) rotate(45deg);
 }
 
+.nav-bar-fixed {
+    position: sticky;
+    z-index: 99;
+}
+
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -310,6 +330,39 @@ section {
 .mobile-nav-item a {
     font-size: 1.5rem;
     font-family: "Arial", sans-serif;
+}
+
+#footer {
+    margin-top: 2rem;
+    padding: 5rem 2rem;
+    background-image: linear-gradient(var(--navybluetransparent), var(--navybluetransparent)), url(http://freedomstoves.com/wp-content/uploads/2021/09/america-3792889_1920BW.jpg);
+    background-attachment: fixed;
+    background-position: top;
+}
+
+/* background-color: var(--deepblue); */
+
+.footer-col {
+    /* background-color: #d94948; */
+    width: 15rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-list {
+    color: var(--lighterpurple);
+}
+
+.footer-list-item {
+    list-style: none;
+}
+
+.footer-list-item a {
+    color: var(--lighterpurple);
+}
+
+.footer-list-item a:hover {
+    text-decoration: none;
 }
 
 @media (min-width: 768px) {

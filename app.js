@@ -1,9 +1,11 @@
 const mobilenav = document.querySelector(".mobile-nav");
+const navbar = document.querySelector(".navbar");
 
 const hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("is-active");
     mobilenav.classList.toggle("mobile-active");
+    navbar.classList.toggle("nav-bar-fixed");
 });
 const navimage = document.querySelector("#nav-image");
 
