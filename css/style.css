@@ -195,6 +195,7 @@ hr {
     font-family: "Arial", sans-serif;
     /* background: greenyellow; */
     padding: 1rem 2rem;
+    border-bottom: 1px;
 }
 
 .nav-list {
@@ -265,7 +266,10 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 2rem;
-    position: relative;
+    position: fixed;
+    top: 3.75rem;
+    right: 2.5rem;
+    z-index: 99;
     /* background: red; */
 }
 
@@ -304,7 +308,7 @@ hr {
 }
 
 .nav-bar-fixed {
-    position: sticky;
+    position: static;
     z-index: 99;
 }
 
@@ -343,6 +347,11 @@ hr {
     background-image: linear-gradient(var(--navybluetransparent), var(--navybluetransparent)), url(http://freedomstoves.com/wp-content/uploads/2021/09/america-3792889_1920BW.jpg);
     background-attachment: fixed;
     background-position: top;
+}
+
+.footer-list,
+#footer {
+    font-size: 1.5rem;
 }
 
 /* background-color: var(--deepblue); */
