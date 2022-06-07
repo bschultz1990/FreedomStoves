@@ -78,6 +78,11 @@ hr {
     display: none;
 }
 
+#website-header {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
 #hero-container {
     margin: 0 0;
     padding: 0 0;
