@@ -1,15 +1,15 @@
 :root {
     /* var(--darkpurple */
-    --lightpurple: #2d105a47;
-    --lighterpurple: #aea7bb;
-    --navyblue: #18023d;
-    --navybluetransparent: #18023dbb;
-    --deepblue: #231c4d;
-    --dustyblue: #41505e;
-    --lightblue: #2a5279;
-    --burgundy: #9c0c0c;
-    --brightred: #d94948;
-    --lightgrey: #b8b6c4;
+    --lightpurple:          #2d105a47;
+    --lighterpurple:        #aea7bb;
+    --navyblue:             #18023d;
+    --navybluetransparent:  #18023dbb;
+    --deepblue:             #231c4d;
+    --dustyblue:            #41505e;
+    --lightblue:            #2a5279;
+    --burgundy:             #9c0c0c;
+    --brightred:            #d94948;
+    --lightgrey:            #b8b6c4;
 }
 
 body {
