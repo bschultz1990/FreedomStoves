@@ -89,7 +89,7 @@ hr {
 }
 
 #hero-banner {
-    background-image: linear-gradient(var(--lightpurple), var(--lightpurple)), url(http://freedomstoves.com/wp-content/uploads/2021/09/Independence-Diagram.png);
+    background-image: linear-gradient(var(--lightpurple), var(--lightpurple)), url(media/Independence-Diagram-min.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -344,7 +344,7 @@ hr {
 #footer {
     margin-top: 2rem;
     padding: 5rem 2rem;
-    background-image: linear-gradient(var(--navybluetransparent), var(--navybluetransparent)), url(http://freedomstoves.com/wp-content/uploads/2021/09/america-3792889_1920BW.jpg);
+    background-image: linear-gradient(var(--navybluetransparent), var(--navybluetransparent)), url(media/bald-eagle.jpg);
     background-attachment: fixed;
     background-position: top;
 }
