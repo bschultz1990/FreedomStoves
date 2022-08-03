@@ -1,0 +1,23 @@
+#navlogo {
+	flex-basis: 25%;
+}
+
+#navmenu {
+    flex-basis: 75%
+}
+
+/* #navwrapper { */
+/* } */
+
+@media (max-width: 1024px){
+	#navlogo, #navmenu {
+		flex-basis: 100%;
+	}
+}
+
+
+@media (max-width: 767px) {
+	#biomasstext {
+		order: 2;
+	}
+}

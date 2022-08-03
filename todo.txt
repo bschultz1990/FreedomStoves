@@ -1,0 +1,36 @@
+TODO: 
+Under Construction page:
+- Pellet Stoves
+	> The Independence
+	> Pellet Stove Accessories
+- Bio Mass Stoves
+	> Drifters Camp Stove
+	> Drifters Camp Stove Accessories
+- Contact
+- About
+- Where To Buy
+- FAQs
+Warranty Information
+User Manuals
+
+--- DONE ---
+
+THE INDEPENDENCE
+
+--- HIGHLIGHT PARAGRAPH ---
+As our flagship stove, the PS21 Independence offers flexible performance and stylish customizability. It is equipped with premium features and produces a powerful and efficient warmth.
+
+SKU: FS-PS21
+
+--- LONGER DESCRIPTION ---
+For those who seek both self-reliance and artistic expression, there is the PS21 Independence. This appliance is capable of delivering up to 27,884 BTUs of heat. Additionally, its side panels can be swapped out with any 12x12" ceramic tile for easy customization. It also has an optional battery backup system, meaning you don't have to sacrifice heat when the power is out. 
+
+--- BULLET POINTS ---
+Heat output up to 27,884 BTUs
+Optional 24V DC Battery Backup (2 12v batteries)
+WiFi Capable
+Swappable Side Panels
+
+
+
+(LINK TO MANUAL HERE)
